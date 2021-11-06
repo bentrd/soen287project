@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="loadProducts()">
 	<div class="main">
 		<div class="header">
 			<div class="top">
@@ -39,173 +39,8 @@
 				<a class="link" href="coupons.html">Coupons</a>
 			</div>
 		</div>
-
 		<div class="container">
-			<div class="product-card">
-				<span class="productname">Banana</span>
-				<a href="./products/banana.html"><img src="./products/banana.jpg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 0.33</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Apple</span>
-				<a href="./products/apple.html"><img src="./products/apple.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 0.67</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Carrot</span>
-				<a href="./products/carrot.html"><img src="./products/carrot.png"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 0.15</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Milk</span>
-				<a href="./products/milk.html"><img src="./products/milk.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 2.99</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Butter</span>
-				<a href="./products/butter.html"><img src="./products/butter.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 6.58</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Yogurt</span>
-				<a href="./products/yogurt.html"><img src="./products/yogurt.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 4.20</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Chicken</span>
-				<a href="./products/chicken.html"><img src="./products/chicken.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 10.79</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Salmon</span>
-				<a href="./products/salmon.html"><img src="./products/salmon.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 8.81</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Steak</span>
-				<a href="./products/steak.html"><img src="./products/steak.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 19.34</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Whole Wheat Bread</span>
-				<a href="./products/wwbread.html"><img src="./products/wwbread.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 3.99</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">White Bread</span>
-				<a href="./products/wbread.html"><img src="./products/wbread.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 3.99</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Gluten Free Bread</span>
-				<a href="./products/gfbread.html"><img src="./products/gfbread.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 6.99</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Oreo Cookies</span>
-				<a href="./products/oreo.html"><img src="./products/oreo.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 3.49</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Nacho Cheese Doritos</span>
-				<a href="./products/doritos.html"><img src="./products/doritos.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 1.89</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
-			<div class="product-card">
-				<span class="productname">Beef Jerky</span>
-				<a href="./products/beef-jerky.html"><img src="./products/beef-jerky.jpeg"></a>
-				<div class="productbuy">
-					<span class="price"><span class="dollarsign">$</span> 6.99</span>
-					<input type="number" min="0" max="99" value="0">
-					<button onclick="">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
+			<!--GENERATED BY JAVASCRIPT-->
 		</div>
 		<footer>
 			<p>SOEN 287 — Group Project — Maxime Joanisse, Steven Monahan, Zaheer Quraishi, Benjamin Tordjman, Paul Xie, Dongping Yu, Ellane Zhou.</p>
@@ -214,6 +49,7 @@
 	<!-- easy to setup icons -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="./scripts/all-products.js"></script>
 </body>
 
 </html>
