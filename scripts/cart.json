@@ -21,7 +21,7 @@
       {
         "name": "Banana",
         "price": 0.33,
-        "img": "./products/banana.jpeg",
+        "img": "./products/banana.jpg",
         "quantity": 6
       },
       {
