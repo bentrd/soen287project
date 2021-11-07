@@ -25,7 +25,7 @@ function loadProducts() {
                             <a href="{5}"><img src="{1}"></a>
                             <div class="productbuy">
                                 <span class="price"><span class="dollarsign">$</span><span id="span-price-{4}">{2}</span></span>
-                                <input id="quantity-input-{4}" type="number" min="1" max="99" value="{3}" onclick="updatePrice({4})">
+                                <input id="quantity-input-{4}" type="number" min="1" max="99" value="{3}" onchange="return updatePrice({4})">
                                 <button onclick="">
                                     <ion-icon name="bag-add-outline"></ion-icon>
                                 </button>
@@ -36,7 +36,11 @@ function loadProducts() {
 }
 
 function updatePrice(index) {
-    let quantityInput = document.getElementById("quantity-input-"+index);
-    allProducts[index].quantity = quantityInput.value;
-    loadProducts();
+    var quantityInput = document.getElementById("quantity-input-" + index);
+    if (quantityInput == null) return false;
+    if (!(quantityInput = quantityInput.value) || isNaN(quantityInput = quantityInput) || (quantityInput = parseInt(quantityInput, 10)) <= 0) { quantityInput = 1; document.getElementById("quantity-input-" + index).value = quantityInput };
+    if (!allProducts[index]) return false;
+    allProducts[index].quantity = quantityInput;
+    loadCart();
+    return false;
 }

@@ -34,7 +34,7 @@ function loadAisles() {
                                 <a href="{1}"><img src="{2}"></a>
                                 <div class="productbuy">
                                     <span class="price"><span class="dollarsign">$</span>{3}</span>
-                                    <input type="number" min="1" max="99" value="{4}" id="quantity-input-{5}-{6}" onchange="updatePrice({5},{6},'{7}')">
+                                    <input type="number" min="1" max="99" value="{4}" id="quantity-input-{5}-{6}" onchange="return updatePrice({5},{6},'{7}')">
                                     <button onclick="">
                                         <ion-icon name="bag-add-outline"></ion-icon>
                                     </button>
@@ -48,7 +48,11 @@ function loadAisles() {
 }
 
 function updatePrice(i, j, k) {
-    let quantityInput = document.getElementById("quantity-input-{0}-{1}".format(i, j));
-    aisles[k][j].quantity = parseInt(quantityInput.value);
+    var quantityInput = document.getElementById("quantity-input-{0}-{1}".format(i, j));
+    if (quantityInput == null) return false;
+    if (!(quantityInput = quantityInput.value) || isNaN(quantityInput = quantityInput) || (quantityInput = parseInt(quantityInput, 10)) <= 0) { quantityInput = 1; document.getElementById("quantity-input-{0}-{1}".format(i, j)).value = quantityInput };
+    if (!aisles[k][j]) return false;
+    aisles[k][j].quantity = quantityInput;
     loadAisles();
+    return false;
 }
