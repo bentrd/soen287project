@@ -44,7 +44,7 @@
 			<div class="product-container" style="margin: 0 10%;">
 				<h1>Beef Jerky</h1>
 				<div class="product">
-					<img src="beef-jerky.jpeg" alt="Beef Jerky">
+					<img id="product-image" src="beef-jerky.jpeg" alt="Beef Jerky">
 					<div class="description">
 						<div class="aisle" onclick="showmore()">description:</div>
 						<p class="txt">
@@ -52,6 +52,13 @@
                             product as “meat” and had to move it to our snack aisle instead. It’s like a salt lick, 
                             but meatier. Johnny Bravo would approve.
 						</p>
+						<select onchange="updateImage(this.value)">
+							<optgroup label="pick variety">
+								<option value="original" selected>Original</option>
+								<option value="teriyaki">Teriyaki</option>
+								<option value="peppered">Peppered</option>
+							</optgroup>
+						</select>
 					</div>
 				</div>
 				<div class="productbuy">

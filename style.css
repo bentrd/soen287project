@@ -292,6 +292,12 @@ body {
 	cursor: pointer;
 }
 
+.product-container .description select {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+}
+
 .txt {
 	max-height: 0;
 	line-height: 1.4em;

@@ -44,13 +44,20 @@
 			<div class="product-container" style="margin: 0 10%;">
 				<h1>Milk of Magnesia</h1>
 				<div class="product">
-					<img src="milk.jpeg" alt="A laxative that has the word 'milk' in it for some reason">
+					<img id="product-image" src="milk.jpeg" alt="A laxative that has the word 'milk' in it for some reason">
 					<div class="description">
 						<div class="aisle" onclick="showmore()">description:</div>
 						<p class="txt">
                             Available in 3.25%, 2%, 1% and skim formats. Also in half and half. 
                             This laxative goes great with cereal or your morning/afternoon coffee.
 						</p>
+						<select onchange="updateImage(this.value)">
+							<optgroup label="pick variety">
+								<option value="325-milk">3.25% Milk</option>
+								<option value="2-milk" selected>2% Milk</option>
+								<option value="0-milk">Lactose free Milk</option>
+							</optgroup>
+						</select>
 					</div>
 				</div>
 				<div class="productbuy">

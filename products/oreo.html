@@ -44,7 +44,7 @@
 			<div class="product-container" style="margin: 0 10%;">
 				<h1>Oreo Cookies</h1>
 				<div class="product">
-					<img src="oreo.jpeg" alt="An oreo">
+					<img id="product-image" src="oreo.jpeg" alt="An oreo">
 					<div class="description">
 						<div class="aisle" onclick="showmore()">description:</div>
 						<p class="txt">
@@ -53,6 +53,12 @@
                             say the word “Lady Gaga Chromatica Orea Cookies,” you can hear the faint sound of 
                             Mr.Christie spinning in his grave.
 						</p>
+						<select onchange="updateImage(this.value)">
+							<optgroup label="pick variety">
+								<option value="regular-oreo">Regular Oreos</option>
+								<option value="golden-oreo">Golden Oreos</option>
+							</optgroup>
+						</select>
 					</div>
 				</div>
 				<div class="productbuy">
