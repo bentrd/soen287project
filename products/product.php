@@ -33,7 +33,7 @@
 			</div>
 			<div class="bottom">
 				<a class="link" href="../index.html">Home</a>
-				<a class="link" href="../products.html">All products</a>
+				<a class="link active" href="../products.html">All products</a>
 				<a class="link" href="../aisles.html">Aisles</a>
 				<a class="link" href="../promotions.html">Promotions</a>
 				<a class="link" href="../coupons.html">Coupons</a>
