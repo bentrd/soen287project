@@ -22,7 +22,7 @@ function loadProducts() {
         let product = document.createElement("div");
         product.classList.add("product-card");
         product.innerHTML = `<span class="productname">{0}</span>
-                            <a href="{5}"><img src="{1}"></a>
+                            <a href="../products/product.php?id={4}"><img src="{1}"></a>
                             <div class="productbuy">
                                 <span class="price"><span class="dollarsign">$</span><span id="span-price-{4}">{2}</span></span>
                                 <input id="quantity-input-{4}" type="number" min="1" max="99" value="{3}" onchange="return updatePrice({4})">

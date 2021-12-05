@@ -41,35 +41,29 @@
 		</div>
 		<div class="container" style="width: 100%;">
 			<div class="product-container" style="margin: 0 10%;">
-				<h1>Apple</h1>
-				<div class="product">
-					<img id="product-image" src="apple.jpeg" alt="an apple">
-					<div class="description">
-						<div class="aisle" onclick="showmore()">description:</div>
-						<p class="txt">
-							Keeps the doctor away. Sure we have free health care,
-							but that doesn’t mean we want to get lectured every 3
-							months about high cholesterol and healthy eating. It’s
-							almost as bad as going to the dentist and being lectured
-							about not flossing. Can also be fed to horses.
-						</p>
-						<select onchange="updateImage(this.value)">
-							<optgroup label="pick variety">
-								<option value="mcintosh" selected>McIntosh Red Apple</option>
-								<option value="green">Green Apple</option>
-								<option value="gala">Gala Apple</option>
-							</optgroup>
-						</select>
-					</div>
-				</div>
-				<div class="productbuy">
-					<span class="price" style="padding-right: 1.4em;"><span class="dollarsign">$</span> 0.67</span>
-					<input type="number" min="0" max="99" value="0">
-					<button href="#add2cart">
-						<ion-icon name="bag-add-outline"></ion-icon>
-					</button>
-				</div>
-			</div>
+			<?php
+				$id = $_GET["id"];
+				$jsondata = file_get_contents("./products.json");
+				$data = json_decode($jsondata, true);
+				$pd = $data[$id];
+				$output = "<h1>".$pd["name"]."</h1>";
+				$output .= "<div class='product'>";
+				$output .= "<img id='product-image' src=".$pd['img'].">";
+				$output .= "<div class='description'><div class='aisle' onclick='showmore()'>description:</div>";
+				$output .= "<p class='txt'>".$pd['desc']."</p>";
+				if (array_key_exists("variations",$pd)) {
+					$output .= "<select onchange='updateImage(this.value)'><optgroup label='pick variety'>";
+					foreach($pd['variations'] as $var) {
+						$output .= "<option value=".$var['link'].">".$var['name']."</option>";
+					}
+					$output .= "</optgroup></select>";
+				}
+				$output .= "</div></div><div class='productbuy'><span class='price' style='padding-right: 1.4em;'>";
+				$output .= "<span class='dollarsign'>$</span> ".$pd['price']."</span>";
+				$output .= "<input type='number' min='0' max='99' value='0'>";
+				$output .= "<button href='#add2cart'><ion-icon name='bag-add-outline'></ion-icon></button></div></div>";
+				echo $output
+			?>
 		</div>
 		<footer>
 			<p>SOEN 287 — Group Project — Maxime Joanisse, Steven Monahan, Zaheer Quraishi, Benjamin Tordjman, Paul Xie, Dongping Yu, Ellane Zhou.</p>
