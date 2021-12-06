@@ -13,20 +13,22 @@
     <div class="main">
         <div class="header">
             <div class="top" style="flex-direction: column; align-items: center;">
-                <a id="logo" href="../index.html"><img src="../logo.png" style="scale: 1.5;"></a>
+                <a id="logo" href="../index.php"><img src="../logo.png" style="scale: 1.5;"></a>
                 <h1>Backstore</h1>
             </div>
             <div class="bottom">
-                <a class="link" href="./users.html">User List</a>
+                <a class="link" href="./users.php">User List</a>
                 <a class="link active" href="#">Product List</a>
-                <a class="link" href="./orders.html">Order List</a>
+                <a class="link" href="./orders.php">Order List</a>
             </div>
         </div>
 
         <div class="content">
             <div class="pre-container">
                 <div class="container" style="margin: 0 20%;">
-                    <a href="addproduct.html" class="addproductbutton"><ion-icon name="add-circle-outline"></ion-icon> add a new product</a>
+                    <a href="addproduct.php" class="addproductbutton">
+                        <ion-icon name="add-circle-outline"></ion-icon> add a new product
+                    </a>
                     <div class="cart-content">
                         <ul>
                             <li>
@@ -35,7 +37,7 @@
                                     <span class="productname">Banana</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -50,7 +52,7 @@
                                     <span class="productname">Apple</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -65,7 +67,7 @@
                                     <span class="productname">Carrot</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -80,7 +82,7 @@
                                     <span class="productname">Milk</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -95,7 +97,7 @@
                                     <span class="productname">Butter</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -110,7 +112,7 @@
                                     <span class="productname">Yogurt</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -125,7 +127,7 @@
                                     <span class="productname">Chicken</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -140,7 +142,7 @@
                                     <span class="productname">Salmon</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -155,7 +157,7 @@
                                     <span class="productname">Steak</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -170,7 +172,7 @@
                                     <span class="productname">Whole Wheat Bread</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -185,7 +187,7 @@
                                     <span class="productname">White Bread</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -200,7 +202,7 @@
                                     <span class="productname">Gluten Free Bread</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -215,7 +217,7 @@
                                     <span class="productname">Oreo Cookies</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -230,7 +232,7 @@
                                     <span class="productname">Nacho Cheese Doritos</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">
@@ -245,7 +247,7 @@
                                     <span class="productname">Beef Jerky</span>
                                 </div>
                                 <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.html','_self')">
+                                    <button onclick="window.open('./editproduct.php','_self')">
                                         <ion-icon name="create-outline"></ion-icon>
                                     </button>
                                     <button onclick="">

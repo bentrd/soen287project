@@ -13,7 +13,7 @@
     <div class="main">
         <div class="header">
             <div class="top">
-                <a id="logo" href="backstore/products.html"><img src="./logo.png"></a>
+                <a id="logo" href="backstore/products.php"><img src="./logo.png"></a>
                 <div class="searchbar">
                     <div></div>
                     <button type="submit">
@@ -22,21 +22,21 @@
                     <input type="text" placeholder="Search a product..">
                 </div>
                 <div class="buttons">
-                    <a href="log.html">
+                    <a href="log.php">
                         <ion-icon name="person-circle-outline"></ion-icon>
                     </a>
-                    <a href="cart.html" id="cart-icon-text">Cart (15)</a>
-                    <a href="cart.html">
+                    <a href="cart.php" id="cart-icon-text">Cart (15)</a>
+                    <a href="cart.php">
                         <ion-icon name="cart-outline"></ion-icon>
                     </a>
                 </div>
             </div>
             <div class="bottom">
-                <a class="link" href="index.html">Home</a>
-                <a class="link" href="products.html">All products</a>
-                <a class="link" href="aisles.html">Aisles</a>
-                <a class="link" href="promotions.html">Promotions</a>
-                <a class="link" href="coupons.html">Coupons</a>
+                <a class="link" href="index.php">Home</a>
+                <a class="link" href="products.php">All products</a>
+                <a class="link" href="aisles.php">Aisles</a>
+                <a class="link" href="promotions.php">Promotions</a>
+                <a class="link" href="coupons.php">Coupons</a>
             </div>
         </div>
 
@@ -65,7 +65,7 @@
                                 <ion-icon name="return-down-back-outline"></ion-icon>
                                 return
                             </button>
-                            <button onclick="window.open('checkout.html','_self')">
+                            <button onclick="window.open('checkout.php','_self')">
                                 <ion-icon name="return-down-forward-outline"></ion-icon>
                                 checkout
                             </button>
