@@ -31,234 +31,23 @@
                     </a>
                     <div class="cart-content">
                         <ul>
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/banana.jpg">
-                                    <span class="productname">Banana</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/apple.jpeg">
-                                    <span class="productname">Apple</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/carrot.png">
-                                    <span class="productname">Carrot</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/milk.jpeg">
-                                    <span class="productname">Milk</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/butter.jpeg">
-                                    <span class="productname">Butter</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/yogurt.jpeg">
-                                    <span class="productname">Yogurt</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/chicken.jpeg">
-                                    <span class="productname">Chicken</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/salmon.jpeg">
-                                    <span class="productname">Salmon</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/steak.jpeg">
-                                    <span class="productname">Steak</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/wwbread.jpeg">
-                                    <span class="productname">Whole Wheat Bread</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/wbread.jpeg">
-                                    <span class="productname">White Bread</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/gfbread.jpeg">
-                                    <span class="productname">Gluten Free Bread</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/oreo.jpeg">
-                                    <span class="productname">Oreo Cookies</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/doritos.jpeg">
-                                    <span class="productname">Nacho Cheese Doritos</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="cart-content-left">
-                                    <img src="../products/beef-jerky.jpeg">
-                                    <span class="productname">Beef Jerky</span>
-                                </div>
-                                <div class="cart-content-right">
-                                    <button onclick="window.open('./editproduct.php','_self')">
-                                        <ion-icon name="create-outline"></ion-icon>
-                                    </button>
-                                    <button onclick="">
-                                        <ion-icon name="trash-outline"></ion-icon>
-                                    </button>
-                                </div>
-                            </li>
-
+                            <?php
+                            $jsondata = file_get_contents("../data/products.json");
+                            $data = json_decode($jsondata, true);
+                            $index = 0;
+                            foreach ($data as $pd) {
+                                $output = "<li><div class='cart-content-left'>";
+                                $output .= "<img src='../products/" . $pd['img'] . "'>";
+                                $output .= "<span class='productname'>" . $pd['name'] . "</span></div>";
+                                $output .= "<div class='cart-content-right'>";
+                                $output .= "<button onclick='window.location = \"./editproduct.php?id=" . $index++ . "\"'><ion-icon name='create-outline'></ion-icon></button>";
+                                $output .= "<button onclick=''>"; //TO DO (delete product)
+                                $output .= "<ion-icon name='trash-outline'></ion-icon></button></div></li>";
+                                echo $output;
+                            }
+                            ?>
+                        </ul>
                     </div>
-                    </li>
-                    </ul>
                 </div>
             </div>
         </div>
@@ -266,10 +55,9 @@
         <footer>
             <p>SOEN 287 — Group Project — Maxime Joanisse, Steven Monahan, Zaheer Quraishi, Benjamin Tordjman, Paul Xie, Dongping Yu, Ellane Zhou.</p>
         </footer>
-    </div>
-    <!-- easy to setup icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <!-- easy to setup icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

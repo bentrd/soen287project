@@ -31,15 +31,33 @@
 					</button>
 					<h1>Edit a Product</h1>
 				</div>
-				<form action="">
+
+				<?php
+				$jsondata = file_get_contents("../data/products.json");
+				$data = json_decode($jsondata, true);
+				$id = $_GET['id'];
+				$pd = $data[$id];
+				?>
+
+				<form action="editproducthandler.php" method="post" enctype="multipart/form-data">
 					<label for="name">Name of Product</label>
-					<input type="text" id="name" name="name">
+					<input type="text" id="name" name="name" value="<?php echo $pd['name'] ?>">
 					<label for="price">Product Price</label>
-					<input type="price" id="price" name="price">
-					<label for="description">Product Description</label>
-					<textarea name="description" cols="auto" rows="5" style="min-height: 3em;"></textarea>
-					<label for="image">Choose Image File</label>
-					<input type="file" name="picture" accept="image/*" />
+					<input type="price" id="price" name="price" value=<?php echo $pd['price'] ?>>
+					<label for="desc">Product Description</label>
+					<textarea name="desc" id="desc" cols="auto" rows="5" style="min-height: 3em;"><?php echo $pd['desc'] ?></textarea>
+					<label for="picture">Choose New Image File</label>
+					<input type="file" name="picture" id="picture" />
+					<label for="aisle">Aisle</label>
+					<select name="aisle" id="aisle">
+						<option value="">--- choose an aisle ---</option>
+						<option value="Fruits & Vegetables" <?php if ($pd['aisle'] == "Fruits & Vegetables") echo "selected" ?>>Fruits & Vegetables</option>
+						<option value="Dairy" <?php if ($pd['aisle'] == "Dairy") echo "selected" ?>>Dairy</option>
+						<option value="Bread" <?php if ($pd['aisle'] == "Bread") echo "selected" ?>>Bread</option>
+						<option value="Meat" <?php if ($pd['aisle'] == "Meat") echo "selected" ?>>Meat</option>
+						<option value="Snacks" <?php if ($pd['aisle'] == "Snacks") echo "selected" ?>>Snacks</option>
+					</select>
+					<input type="hidden" id="id" name="id" value=<?php echo $pd['id'] ?>>
 					<input type="submit" value="edit">
 				</form>
 			</div>

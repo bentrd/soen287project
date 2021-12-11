@@ -1,10 +1,19 @@
 <?php
+$flag = true;
 $newProduct = new stdClass();
-$newProduct->name = $_POST['name'];
-$newProduct->price = doubleval($_POST['price']);
-$newProduct->desc = $_POST['desc'];
+if (isset($_POST['name']))
+    $newProduct->name = $_POST['name'];
+else $flag = false;
+if (isset($_POST['price']))
+    $newProduct->price = doubleval($_POST['price']);
+else $flag = false;
+if (isset($_POST['desc']))
+    $newProduct->desc = $_POST['desc'];
+else $flag = false;
 $newProduct->quantity = 0;
-$newProduct->aisle = filter_input(INPUT_POST, 'aisle', FILTER_SANITIZE_STRING);
+if (isset($_POST['aisle']))
+    $newProduct->aisle = $_POST['aisle'];
+else $flag = false;
 
 $uploadDirectory = "../products/";
 
@@ -33,21 +42,18 @@ if ($fileSize > 4000000) {
 
 if (empty($errors)) {
     $didUpload = move_uploaded_file($fileTmpName, $uploadPath);
-
-    if ($didUpload) {
-        echo "The file " . basename($fileName) . " has been uploaded";
-    } else {
-        echo "An error occurred.";
-    }
+    if (!$didUpload) $flag = false;
 } else {
     foreach ($errors as $error) {
         echo $error . "These are the errors" . "\n";
+        $flag = false;
     }
 }
 
 $jsondata = file_get_contents("../data/products.json");
 $data = json_decode($jsondata, true);
-array_push($data, $newProduct);
+$newProduct->id = count($data);
+if ($flag) array_push($data, $newProduct);
 $jsondata = json_encode($data);
 file_put_contents("../data/products.json", $jsondata);
 

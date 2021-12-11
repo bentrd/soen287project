@@ -43,14 +43,13 @@
 			<?php
 			$jsondata = file_get_contents("./data/products.json");
 			$data = json_decode($jsondata, true);
-			$index = 0;
 			foreach ($data as $pd) {
 				$output = "<div class='product-card'>";
-				$output .= "<span class='productname'><a class='productname' href='./products/product.php?id=" . $index . "'>" . $pd['name'] . "</a></span>";
-				$output .= "<a href='./products/product.php?id=" . $index++ . "'><img src='./products" . $pd['img'] . "'></a>";
+				$output .= "<span class='productname'><a class='productname' href='./products/product.php?id=" . $pd['id'] . "'>" . $pd['name'] . "</a></span>";
+				$output .= "<a href='./products/product.php?id=" . $pd['id'] . "'><img src='./products" . $pd['img'] . "'></a>";
 				$output .= "<div class='productbuy'>";
-				$output .= "<span class='price'><span class='dollarsign'>$</span><span id='price" . $index . "'>" . $pd['price'] . "</span></span>";
-				$output .= "<input id='qtyInput" . $index . "' onchange='updatePrice(\"" . $index . "\"," . $pd['price'] . ")' type='number' min='1' max='99' value='1'><button onclick='addToCart(" . json_encode($pd) . ",\"qtyInput" . $index . "\")'><ion-icon name='bag-add-outline'></ion-icon></button>";
+				$output .= "<span class='price'><span class='dollarsign'>$</span><span id='price" . $pd['id'] . "'>" . $pd['price'] . "</span></span>";
+				$output .= "<input id='qtyInput" . $pd['id'] . "' onchange='updatePrice(\"" . $pd['id'] . "\"," . $pd['price'] . ")' type='number' min='1' max='99' value='1'><button onclick='addToCart(" . json_encode($pd) . ",\"qtyInput" . $pd['id'] . "\")'><ion-icon name='bag-add-outline'></ion-icon></button>";
 				$output .= "</div></div>";
 				echo $output;
 			}
