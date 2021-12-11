@@ -18,7 +18,7 @@ if (isset($_POST['aisle'])) {
 } else $flag = false;
 $newProduct->quantity = 0;
 
-if (isset($_POST['picture'])) {
+if ($_FILES['picture']['error'] == 0) {
     $uploadDirectory = "../products/";
 
     $errors = []; // Store errors here
@@ -58,7 +58,7 @@ if ($flag) {
     $data = array_map(function ($pd) {
         global $newProduct;
         if ($pd['id'] == $newProduct->id) {
-            if (isset($_POST['picture'])) $newProduct->img = "/" . $GLOBALS['pictureName'];
+            if ($_FILES['picture']['error'] == 0) $newProduct->img = "/" . $GLOBALS['pictureName'];
             else $newProduct->img = $pd['img'];
             return $newProduct;
         } else return $pd;
