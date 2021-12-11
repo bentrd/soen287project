@@ -57,8 +57,7 @@
 				<h1>OUR BEST SELLERS</h1>
 				<ul>
 					<li>
-						Try our delicious apples imported from south africa! Click <a class="link"
-							href="products/apple.html">here</a> to order.
+						Try our delicious apples imported from south africa! Click <a class="link" href="products/apple.html">here</a> to order.
 					</li>
 					<li>
 						Fancy a gluten free bread? Click <a class="link" href="products/gfbread.html">here</a> to order.
@@ -69,8 +68,7 @@
 				<div class="content" style="min-width: 40%;">
 					<h1>Our Location</h1>
 					<p>
-						click <a
-							href="https://www.google.com/maps/dir//Concordia+University,+1455+Boulevard+de+Maisonneuve+O,+Montreal,+Quebec+H3G+1M8/@45.5017156,-73.5547127,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4cc91a6a636dd639:0x9e85cac6415827f0!2m2!1d-73.5779128!2d45.4948363!3e0">
+						click <a href="https://www.google.com/maps/dir//Concordia+University,+1455+Boulevard+de+Maisonneuve+O,+Montreal,+Quebec+H3G+1M8/@45.5017156,-73.5547127,14z/data=!4m9!4m8!1m0!1m5!1m1!1s0x4cc91a6a636dd639:0x9e85cac6415827f0!2m2!1d-73.5779128!2d45.4948363!3e0">
 							here</a>
 					</p>
 				</div>
@@ -89,6 +87,7 @@
 	<!-- easy to setup icons -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="./scripts/products.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,201 @@
+{
+    "cart": [
+        {
+            "name": "Apple",
+            "price": 0.67,
+            "desc": "Keeps the doctor away. Sure we have free health care, but that doesn\u2019t mean we want to get lectured every 3 months about high cholesterol and healthy eating. It\u2019s almost as bad as going to the dentist and being lectured about not flossing. Can also be fed to horses.",
+            "img": "\/apple.jpeg",
+            "link": "\/apple.html",
+            "aisle": "Fruits & Vegetables",
+            "quantity": 0,
+            "variations": [
+                {
+                    "name": "McIntosh Red Apple",
+                    "link": ".\/apple.jpeg"
+                },
+                {
+                    "name": "Green Apple",
+                    "link": ".\/variations\/green-apple.jpeg"
+                },
+                {
+                    "name": "Gala Apple",
+                    "link": ".\/variations\/gala-apple.jpeg"
+                }
+            ]
+        },
+        {
+            "name": "Banana",
+            "price": 0.33,
+            "desc": "It\u2019s not easy being green. It\u2019s also not easy eating green. When a banana is green, it\u2019s not very ripe. Wait until it\u2019s at least yellow all the way through with a few black spots. If if it gets to be too ripe, put it into your freezer and lie about how you\u2019ll use it to make banana bread later.",
+            "img": "\/banana.jpg",
+            "link": "\/banana.html",
+            "aisle": "Fruits & Vegetables",
+            "quantity": 0
+        },
+        {
+            "name": "Carrot",
+            "price": 0.15,
+            "desc": "Suitable for human and rabbit consumption. Legally we\u2019re not allowed to say that this improves eye-sight, because this has been disproven. But don\u2019t let science get in the way of achieving your dreams 20\/20 vision. 1 carrot today could equal an illustrious career as a pilot tomorrow.",
+            "img": "\/carrot.png",
+            "link": "\/carrot.html",
+            "aisle": "Fruits & Vegetables",
+            "quantity": 0,
+            "variations": [
+                {
+                    "name": "Jumbo Carrot",
+                    "link": ".\/carrot.png"
+                },
+                {
+                    "name": "Baby Carrots",
+                    "link": ".\/variations\/baby-carrot.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Milk",
+            "price": 2.99,
+            "desc": "Available in 3.25%, 2%, 1% and skim formats. Also in half and half. This laxative goes great with cereal or your morning\/afternoon coffee.",
+            "img": "\/milk.jpeg",
+            "link": "\/milk.html",
+            "aisle": "Dairy",
+            "quantity": 0,
+            "variations": [
+                {
+                    "name": "2% Milk",
+                    "link": ".\/milk.jpeg"
+                },
+                {
+                    "name": "Lactose-free Milk",
+                    "link": ".\/variations\/0-milk.jpg"
+                },
+                {
+                    "name": "3.25% Milk",
+                    "link": ".\/variations\/325-milk.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Butter",
+            "price": 6.58,
+            "desc": "I can't believe it's not margarine. The sheer quantity of butter that Paula Deen uses when cooking has us wondering if she\u2019s trying to kill her husband. How does one survive consuming that much butter? Regardless, feel free to purchase as much as you see fit. For cooking, or murder. We won\u2019t judge.",
+            "img": "\/butter.jpeg",
+            "link": "\/butter.html",
+            "aisle": "Dairy",
+            "quantity": 0
+        },
+        {
+            "name": "Yogurt",
+            "price": 4.2,
+            "desc": "Market research has shown that women are the primary consumers of yogurt. That\u2019s why yogurt commercials are inundated with women laughing at containers of yogurt. One time the Oxygen network ran the same yogurt commercial back to back, 12 times in a row. On purpose. Available in vanilla and strawberry.",
+            "img": "\/yogurt.jpeg",
+            "link": "\/yogurt.html",
+            "aisle": "Dairy",
+            "quantity": 0
+        },
+        {
+            "name": "Chicken",
+            "price": 10.79,
+            "desc": "It tastes like chicken because it is chicken. What else were you expecting? Corn fed, no antibiotics, given a first name and a long-fulfilling life. Even vegans could guiltlessly enjoy this poultry.",
+            "img": "\/chicken.jpeg",
+            "link": "\/chicken.html",
+            "aisle": "Meat",
+            "quantity": 0
+        },
+        {
+            "name": "Salmon",
+            "price": 8.81,
+            "desc": "There\u2019s a famous picture on the Internet of a salmon leaping into a bear\u2019s mouth. Be the bear and devour this fish. Add some lemon. We promise that the particular salmon you\u2019re purchasing once swam up a waterfall.",
+            "img": "\/salmon.jpeg",
+            "link": "\/salmon.html",
+            "aisle": "Meat",
+            "quantity": 0
+        },
+        {
+            "name": "Steak",
+            "price": 19.34,
+            "desc": "Not to be confused with the kind of stake Buffy liked to use. Best cooked medium rare. Anything more would be a sin. At least, that\u2019s what the current culture tells us. Honestly just enjoy this steak however you prefer it. Not everyone wants to look down at their plate and see a hot bloody mess.",
+            "img": "\/steak.jpeg",
+            "link": "\/steak.html",
+            "aisle": "Meat",
+            "quantity": 0
+        },
+        {
+            "name": "Whole White Bread",
+            "price": 3.99,
+            "desc": "Tastes like white bread but slightly more nutritious. Available in a loaf format, pre-sliced. Buy 12 and freeze 11 for later.",
+            "img": "\/wwbread.jpeg",
+            "link": "\/wwbread.html",
+            "aisle": "Bread",
+            "quantity": 0
+        },
+        {
+            "name": "White Bread",
+            "price": 3.99,
+            "desc": "Devoid of almost any nutritional value, this bread is perfect for making sandwiches or attacking your digestive system with empty carbohydrates.",
+            "img": "\/wbread.jpeg",
+            "link": "\/wbread.html",
+            "aisle": "Bread",
+            "quantity": 0
+        },
+        {
+            "name": "Gluten Free Bread",
+            "price": 6.99,
+            "desc": "The \"GF\" stands for \"Gluten Free\". But it could also stand for somethign else. Remember that glutten-free crazy from the late 2000s? It never really went away. Celiac disease is a serious issue that your uncle at Thanksgiving will never take seriously. Thankfully he never learned how to cook. So give this bread to your aunt and may all of the pain you experience be from your Uncle\u2019s contradicting politics, and not a gluten allergy.",
+            "img": "\/gfbread.jpeg",
+            "link": "\/gfbread.html",
+            "aisle": "Bread",
+            "quantity": 0
+        },
+        {
+            "name": "Oreo Cookies",
+            "price": 3.49,
+            "desc": "Palm oil based vanilla frosting, sandwiched in between two chocolate biscuits. At least, that\u2019s how it started. Now there\u2019s at least 20 different varieties. Rumor has it if you say the word \u201cLady Gaga Chromatica Orea Cookies,\u201d you can hear the faint sound of Mr.Christie spinning in his grave.",
+            "img": "\/oreo.jpeg",
+            "link": "\/oreo.html",
+            "aisle": "Snacks",
+            "quantity": 0,
+            "variations": [
+                {
+                    "name": "Regular Oreos",
+                    "link": ".\/oreo.jpeg"
+                },
+                {
+                    "name": "Golden Oreos",
+                    "link": ".\/variations\/golden-oreo.jpg"
+                }
+            ]
+        },
+        {
+            "name": "Nacho Cheese Doritos",
+            "price": 1.89,
+            "desc": "Best served in a trough meant for feeding livestock, or as a makeup foundation for a US presidential campaign. Perfect for watching the Superbowl or being disgusting. Cheese sold separately.",
+            "img": "\/doritos.jpeg",
+            "link": "\/doritos.html",
+            "aisle": "Snacks",
+            "quantity": 0
+        },
+        {
+            "name": "Beef Jerky",
+            "price": 6.99,
+            "desc": "Because of recently passed legislation, we are no longer allowed to classify this product as \u201cmeat\u201d and had to move it to our snack aisle instead. It\u2019s like a salt lick, but meatier. Johnny Bravo would approve.",
+            "img": "\/beef-jerky.jpeg",
+            "link": "\/beef-jerky.html",
+            "aisle": "Snacks",
+            "quantity": 0,
+            "variations": [
+                {
+                    "name": "Original",
+                    "link": ".\/beef-jerky.jpeg"
+                },
+                {
+                    "name": "Peppered",
+                    "link": ".\/variations\/peppered-beef-jerky.jpeg"
+                },
+                {
+                    "name": "Teriyaki",
+                    "link": ".\/variations\/teriyaki-beef-jerky.jpeg"
+                }
+            ]
+        }
+    ]
+}

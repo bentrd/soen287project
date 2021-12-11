@@ -13,20 +13,20 @@
 	<div class="main">
 		<div class="header">
 			<div class="top" style="flex-direction: column; align-items: center;">
-				<a id="logo" href="../index.html"><img src="../logo.png" style="scale: 1.5;"></a>
+				<a id="logo" href="../index.php"><img src="../logo.png" style="scale: 1.5;"></a>
 				<h1>Backstore</h1>
 			</div>
 			<div class="bottom">
-				<a class="link" href="./users.html">User List</a>
-				<a class="link" href="./products.html">Product List</a>
+				<a class="link" href="./users.php">User List</a>
+				<a class="link" href="./products.php">Product List</a>
 				<a class="link active" href="#">Order List</a>
 			</div>
 		</div>
 
 		<div class="content">
 			<div class="pre-container">
-                <div class="container" style="margin: 0 20%;">
-                    <h1>No orders yet..</h1>
+				<div class="container" style="margin: 0 20%;">
+					<h1>No orders yet..</h1>
 				</div>
 			</div>
 		</div>

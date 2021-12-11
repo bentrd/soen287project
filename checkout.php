@@ -25,7 +25,7 @@
 					<a href="log.php">
 						<ion-icon name="person-circle-outline"></ion-icon>
 					</a>
-					<a href="cart.php">Cart (15)</a>
+					<a href="cart.php">Cart (<span id="cartQty">0</span>)</a>
 					<a href="cart.php">
 						<ion-icon name="cart-outline"></ion-icon>
 					</a>
@@ -124,8 +124,7 @@
 							<span class="subtotal">sub-total: $ 2.45</span>
 							<span class="subtotal">QST: $ 8.22</span>
 							<span class="subtotal">GST: $ 4.12</span>
-							<span class="total">Total: <span class="dollarsign">$</span><span
-									class="price">94.79</span></span>
+							<span class="total">Total: <span class="dollarsign">$</span><span class="price">94.79</span></span>
 						</div>
 					</div>
 				</div>
@@ -138,6 +137,7 @@
 	<!-- easy to setup icons -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="./scripts/products.js"></script>
 </body>
 
 </html>

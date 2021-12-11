@@ -13,30 +13,31 @@
 	<div class="main">
 		<div class="header">
 			<div class="top" style="flex-direction: column; align-items: center;">
-				<a id="logo" href="../index.html"><img src="../logo.png" style="scale: 1.5;"></a>
+				<a id="logo" href="../index.php"><img src="../logo.png" style="scale: 1.5;"></a>
 				<h1>Backstore</h1>
 			</div>
 			<div class="bottom">
 				<a class="link active" href="#">User List</a>
-				<a class="link" href="./products.html">Product List</a>
-				<a class="link" href="./orders.html">Order List</a>
+				<a class="link" href="./products.php">Product List</a>
+				<a class="link" href="./orders.php">Order List</a>
 			</div>
 		</div>
 
 		<div class="content">
 			<div class="pre-container">
 				<div class="container" style="margin: 0 20%;">
-					<a href="adduser.html" class="addproductbutton"><ion-icon name="add-circle-outline"></ion-icon> add a new user</a>
+					<a href="adduser.php" class="addproductbutton">
+						<ion-icon name="add-circle-outline"></ion-icon> add a new user
+					</a>
 					<div class="cart-content">
 						<ul>
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Maxime Joanisse</span>
 									<span class="email">maxime.joanisse@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">
@@ -46,13 +47,12 @@
 							</li>
 
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Steven Monahan</span>
 									<span class="email">steven.monahan@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">
@@ -62,13 +62,12 @@
 							</li>
 
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Zaheer Quraishi</span>
 									<span class="email">zaheer.quraishi@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">
@@ -78,13 +77,12 @@
 							</li>
 
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Benjamin Tordjman</span>
 									<span class="email">benjamin.tordjman@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">
@@ -94,13 +92,12 @@
 							</li>
 
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Paul Xie</span>
 									<span class="email">paul.xie@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">
@@ -110,13 +107,12 @@
 							</li>
 
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Dongping Yu</span>
 									<span class="email">dongping.yu@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">
@@ -126,13 +122,12 @@
 							</li>
 
 							<li>
-								<div class="cart-content-left"
-									style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
+								<div class="cart-content-left" style="flex-direction: column; align-items: flex-start; justify-content: space-around;">
 									<span class="name">Ellane Zhou</span>
 									<span class="email">ellane.zhou@iventro.com</span>
 								</div>
 								<div class="cart-content-right">
-									<button onclick="window.open('./edituser.html','_self')">
+									<button onclick="window.open('./edituser.php','_self')">
 										<ion-icon name="create-outline"></ion-icon>
 									</button>
 									<button onclick="">

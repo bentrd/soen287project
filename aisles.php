@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="getCartSize()">
 	<div class="main">
 		<div class="header">
 			<div class="top">
@@ -25,7 +25,7 @@
 					<a href="log.php">
 						<ion-icon name="person-circle-outline"></ion-icon>
 					</a>
-					<a href="cart.php">Cart (15)</a>
+					<a href="cart.php">Cart (<span id="cartQty">0</span>)</a>
 					<a href="cart.php">
 						<ion-icon name="cart-outline"></ion-icon>
 					</a>
@@ -43,8 +43,8 @@
 		<div class="content">
 			<?php
 			$aisles = ["Fruits & Vegetables", "Dairy", "Meat", "Bread", "Snacks"];
-			$jsondata = file_get_contents("./products/products.json");
-			$data = json_decode($jsondata, true);
+			$jsondata = file_get_contents("./data/products.json");
+			$data = json_decode($jsondata, true)['cart'];
 			$index = 0;
 			foreach ($aisles as $aisle) {
 				$output = "<button class='aisle'>$aisle</button>";
@@ -55,8 +55,8 @@
 					$output .= "<span class='productname'><a class='productname' href='./products/product.php?id=" . $index . "'>" . $pd['name'] . "</a></span>";
 					$output .= "<a href='./products/product.php?id=" . $index++ . "'><img src='./products" . $pd['img'] . "'></a>";
 					$output .= "<div class='productbuy'>";
-					$output .= "<span class='price'><span class='dollarsign'>$</span><span>" . $pd['price'] . "</span></span>";
-					$output .= "<input type='number' min='1' max='99' value='1'><button onclick=''><ion-icon name='bag-add-outline'></ion-icon></button>";
+					$output .= "<span class='price'><span class='dollarsign'>$</span><span id='price" . $index . "'>" . $pd['price'] . "</span></span>";
+					$output .= "<input id='qtyInput" . $index . "' onchange='updatePrice(\"" . $index . "\"," . $pd['price'] . ")' type='number' min='1' max='99' value='1'><button onclick='addToCart(" . json_encode($pd) . ",\"qtyInput" . $index . "\")'><ion-icon name='bag-add-outline'></ion-icon></button>";
 					$output .= "</div></div>";
 				}
 				$output .= "</div></div>";
@@ -71,5 +71,6 @@
 	<!-- easy to setup icons -->
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script type="text/javascript" src="./scripts/products.js"></script>
 </body>
 </php>

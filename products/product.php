@@ -25,7 +25,7 @@
 					<a href="../log.php">
 						<ion-icon name="person-circle-outline"></ion-icon>
 					</a>
-					<a href="../cart.php">Cart (15)</a>
+					<a href="cart.php">Cart (<span id="cartQty">0</span>)</a>
 					<a href="../cart.php">
 						<ion-icon name="cart-outline"></ion-icon>
 					</a>
@@ -43,7 +43,7 @@
 			<div class="product-container" style="margin: 0 10%;">
 				<?php
 				$id = $_GET["id"];
-				$jsondata = file_get_contents("./products.json");
+				$jsondata = file_get_contents("../data/products.json");
 				$data = json_decode($jsondata, true);
 				$pd = $data[$id];
 				$output = "<h1>" . $pd['name'] . "</h1>";

@@ -410,6 +410,12 @@ body {
 	box-shadow: none;
 }
 
+.content form {
+	margin: 0 !important;
+	font-size: unset !important;
+	display: block;
+}
+
 button ion-icon {
 	transform: translateY(2px);
 }

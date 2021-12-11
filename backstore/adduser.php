@@ -13,13 +13,13 @@
 	<div class="main">
 		<div class="header">
 			<div class="top" style="flex-direction: column; align-items: center;">
-				<a id="logo" href="../index.html"><img src="../logo.png" style="scale: 1.5;"></a>
+				<a id="logo" href="../index.php"><img src="../logo.png" style="scale: 1.5;"></a>
 				<h1>Backstore</h1>
 			</div>
 			<div class="bottom">
-				<a class="link active" href="./users.html">User List</a>
-				<a class="link" href="./products.html">Product List</a>
-				<a class="link" href="./orders.html">Order List</a>
+				<a class="link active" href="./users.php">User List</a>
+				<a class="link" href="./products.php">Product List</a>
+				<a class="link" href="./orders.php">Order List</a>
 			</div>
 		</div>
 

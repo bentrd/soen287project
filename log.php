@@ -25,7 +25,7 @@
           <a href="log.php">
             <ion-icon name="person-circle-outline"></ion-icon>
           </a>
-          <a href="cart.php">Cart (15)</a>
+          <a href="cart.php" id="cart-icon-text">Cart (<span id="cartQty">0</span>)</a>
           <a href="cart.php">
             <ion-icon name="cart-outline"></ion-icon>
           </a>
@@ -73,6 +73,7 @@
   <!-- easy to setup icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="text/javascript" src="./scripts/products.js"></script>
 </body>
 
 </html>
