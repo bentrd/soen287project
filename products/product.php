@@ -59,9 +59,9 @@
 					$output .= "</optgroup></select>";
 				}
 				$output .= "</div></div><div class='productbuy'><span class='price' style='padding-right: 1.4em;'>";
-				$output .= "<span class='dollarsign'>$</span> " . $pd['price'] . "</span>";
-				$output .= "<input type='number' min='0' max='99' value='0'>";
-				$output .= "<button href='#add2cart'><ion-icon name='bag-add-outline'></ion-icon></button></div></div>";
+				$output .= "<span class='dollarsign'>$</span><span id='price" . $id . "'>" . $pd['price'] . "</span></span>";
+				$output .= "<input id='qtyInput" . $id . "' onchange='updatePrice(\"" . $id . "\"," . $pd['price'] . ")' type='number' min='1' max='99' value='1'><button onclick='addToCart(" . json_encode($pd) . ",\"qtyInput" . $id . "\")'><ion-icon name='bag-add-outline'></ion-icon></button>";
+				$output .= "</div></div>";
 				echo $output
 				?>
 			</div>

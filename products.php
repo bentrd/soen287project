@@ -42,7 +42,7 @@
 		<div class="container">
 			<?php
 			$jsondata = file_get_contents("./data/products.json");
-			$data = json_decode($jsondata, true)['cart'];
+			$data = json_decode($jsondata, true);
 			$index = 0;
 			foreach ($data as $pd) {
 				$output = "<div class='product-card'>";

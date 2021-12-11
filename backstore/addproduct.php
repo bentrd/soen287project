@@ -31,15 +31,24 @@
 					</button>
 					<h1>Add a Product</h1>
 				</div>
-				<form action="">
+				<form action="addproducthandler.php" method="post" enctype="multipart/form-data">
 					<label for="name">Name of Product</label>
 					<input type="text" id="name" name="name">
 					<label for="price">Enter Product Price</label>
 					<input type="price" id="price" name="price">
-					<label for="description">Enter Product Description</label>
-					<textarea name="description" cols="auto" rows="5" style="min-height: 3em;"></textarea>
+					<label for="desc">Enter Product Description</label>
+					<textarea name="desc" cols="auto" rows="5" style="min-height: 3em;"></textarea>
 					<label for="image">Choose Image File</label>
-					<input type="file" name="picture" accept="image/*" />
+					<input type="file" name="picture" id="picture" />
+					<label for="aisle">Aisle</label>
+					<select name="aisle" id="aisle">
+						<option value="">--- choose an aisle ---</option>
+						<option value="Fruits & Vegetables">Fruits & Vegetables</option>
+						<option value="Dairy">Dairy</option>
+						<option value="Bread">Bread</option>
+						<option value="Meat">Meat</option>
+						<option value="Snacks">Snacks</option>
+					</select>
 					<input type="submit" value="add">
 				</form>
 			</div>

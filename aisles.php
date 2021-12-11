@@ -44,7 +44,7 @@
 			<?php
 			$aisles = ["Fruits & Vegetables", "Dairy", "Meat", "Bread", "Snacks"];
 			$jsondata = file_get_contents("./data/products.json");
-			$data = json_decode($jsondata, true)['cart'];
+			$data = json_decode($jsondata, true);
 			$index = 0;
 			foreach ($aisles as $aisle) {
 				$output = "<button class='aisle'>$aisle</button>";
