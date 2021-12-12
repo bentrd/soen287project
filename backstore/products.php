@@ -26,7 +26,7 @@
         <div class="content">
             <div class="pre-container">
                 <div class="container" style="margin: 0 20%;">
-                    <a href="addproduct.php" class="addproductbutton">
+                    <a href="addproduct.html" class="addproductbutton">
                         <ion-icon name="add-circle-outline"></ion-icon> add a new product
                     </a>
                     <div class="cart-content">
