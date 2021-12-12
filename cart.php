@@ -50,23 +50,19 @@
                         </ul>
                         <div class="cart-content-bottom">
                             <div class="cart-content-bottom-left">
-                                <span class="subtotal" style="border-bottom: 1px dashed #aaa;">15 items</span>
+                                <span class="subtotal" style="border-bottom: 1px dashed #aaa;">0 items</span>
                             </div>
                             <div class="cart-content-bottom-right">
-                                <span class="subtotal">sub-total: $--.--</span>
-                                <span class="subtotal">QST: $--.--</span>
-                                <span class="subtotal">GST: $--.--</span>
-                                <span class="total">Total: <span class="dollarsign">$</span><span class="price">$--.--</span></span>
+                                <span class="subtotal">sub-total: $0.00</span>
+                                <span class="subtotal">QST: $0.00</span>
+                                <span class="subtotal">GST: $0.00</span>
+                                <span class="total">Total: <span class="dollarsign">$</span><span class="price">$0.00</span></span>
                             </div>
                         </div>
                         <div class="cart-nav">
                             <button onclick="history.back()">
                                 <ion-icon name="return-down-back-outline"></ion-icon>
                                 return
-                            </button>
-                            <button onclick="window.open('checkout.php','_self')">
-                                <ion-icon name="return-down-forward-outline"></ion-icon>
-                                checkout
                             </button>
                         </div>
                     </div>
