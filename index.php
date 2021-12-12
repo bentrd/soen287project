@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="getCartSize()">
 	<div class="main">
 		<div class="header">
 			<div class="top">
