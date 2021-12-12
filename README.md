@@ -1,5 +1,5 @@
 # SOEN 287 — Group Project
-* **Hosted:** http://benjamin.tordjman.com
+* **Hosted:** https://iventro.000webhostapp.com
 * To access the backstore click on the logo.
 * _**Goal:** create an online grocery store._
 ## Group members:
