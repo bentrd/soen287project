@@ -25,7 +25,7 @@
 					<a href="log.php">
 						<ion-icon name="person-circle-outline"></ion-icon>
 					</a>
-					<a href="cart.php">Cart (15)</a>
+					<a href="cart.php">Cart (<span id="cartQty">0</span>)</a>
 					<a href="cart.php">
 						<ion-icon name="cart-outline"></ion-icon>
 					</a>
