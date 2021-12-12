@@ -51,6 +51,7 @@ const deleteProduct = id => {
     cart = [...cart.slice(0, id), ...cart.slice(id + 1)]
     localStorage.setItem('cart', JSON.stringify(cart));
     loadCart();
+    getCartSize();
 }
 
 const getCartSize = () => {
